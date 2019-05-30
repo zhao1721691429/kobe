@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,body,.main{
+    height:100%;
+}
+body{
+  
+}
+.main{
+    position: relative;
+    max-width:750px;
+    margin:0 auto;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+} 
+.page1{
+    position: relative;
+    background:url("../images/page1.jpg") center center no-repeat;
+    background-size:100% 100%;
+}
+.page1>img{
+    position:absolute;
+
+}
+.koulan{
+    width:4rem;
+    height:5rem;
+    top:0;
+    right:0;
+}
+.qiuchang{
+    width:100%;
+    height:4.02rem;
+    bottom:0;
+    left:0;
+
+}
+.zhi{
+    width:2.08rem;
+    height:2.22rem;
+    left:0.6rem;
+    top:4rem;
+}
+.kebi{
+    width:4.78rem;
+    height:2.74rem;
+    left:2.8rem;
+    top:5.6rem;
+}
+.thank{
+    width: 3rem;
+    height: 2rem;
+    left: 0.5rem;
+    bottom: 1rem;
+}
+.swiper-button-next{
+    width:0.5rem;
+    height:0.4rem;
+    background:url("../images/arrow.png") center center no-repeat;
+    background-size:cover;
+    bottom: 0.5rem;
+    top: auto;
+    left: 50%;
+    right: auto;
+    margin-left: -0.25rem;
+    animation:slideInUp 1s infinite;
+}
+
+
+@-webkit-keyframes slideInUp {
+    from {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes slideInUp {
+    from {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+  }
+  
+  @-webkit-keyframes slideOutDown {
+    from {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    to {
+      visibility: hidden;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+
+  /* 第二页 */
+  .page2{
+      position: relative;
+  }
+  .page2>img{
+      position: absolute;
+  }
+  .page2{
+      height:100%;
+      background:url("../images/page2.jpeg") center center no-repeat;
+      background-size:cover;
+
+  }
+
+  .tubiao{
+      width:2.48rem;
+      height:2.48rem;
+      left:0rem;
+      top:1rem;
+
+  }
+  .xiongdi{
+      width:3.26rem;
+      height:3.26rem;
+      right:0rem;
+      top:0rem;
+  }
+  .lanqiu{
+      width:2rem;
+      height:2rem;
+      right:0rem;
+      top:3.5rem;
+  }
+
+  .bottom1{
+     width: 2rem;
+     height: 2rem;
+     left: 0rem;
+     bottom: 0.7rem;
+  }
+  .bottom2{
+     width: 1.5rem;
+     height: 1.5rem;
+     bottom: 0.7rem;
+     left: 50%;
+     margin-left: -0.875rem;
+  }
+  .bottom3{
+     width: 1rem;
+     height: 1.8723788865rem;
+     right: 0.8rem;
+     bottom: 0.7rem;
+
+  }
+  .textContent{
+      position:absolute;
+      font-size:0.45rem;
+      left:0.8rem;
+      top:3.5rem;
+      line-height:0.9rem;
+      color:purple;
+  }
+  /* 相框 */
+  .photoBox{
+      width:5.44rem;
+      height:3.24rem;
+      background:url("../images/photoBorder.png") center center no-repeat;
+      background-size:100% 100%;
+      position: absolute;
+      left:50%;
+      margin-left:-2.72rem;
+      bottom:2.7rem;
+      padding:0.4rem;
+      box-sizing:border-box;
+  }
+  .photo{
+      display:block;
+      width:100%;
+      height:100%;
+
+  }
+/* page3 */
+   .page3{
+    height:100%;
+    background:url("../images/page2.jpeg") center center no-repeat;
+    background-size:cover;
+   }
+   .page3>img{
+       position: absolute;
+   }
+  .wei{
+    width:5rem;
+    height:3.5rem;
+    top:0rem;
+    left:50%;
+    margin-left:-2.5rem;
+  }
+  .xiemu{
+     width:100%;
+     height: 80%;
+     left:50%;
+     bottom:0;
+     margin-left: -50%;
+  }
+
+  .blackBoard{
+      position: absolute;
+      width:5.56rem;
+      height:4.04rem;
+      background:url("../images/page3_heiban.png") center center no-repeat;
+      background-size:100% 100%;
+      top:50%;
+      left:50%;
+      margin-left:-2.78rem;
+      margin-top:-2.02rem;
+      padding:0.8rem;
+      padding-left:0.6rem;
+      box-sizing:border-box;
+  }
+
+  .music{
+      width:2rem;
+      height:2rem;
+      background:url("../images/qiu.png") center center no-repeat;
+      background-size:cover;
+      position: absolute;
+      left:0rem;
+      top:0rem;
+      z-index:999;
+      border-radius:50%;
+      animation: music 2s linear infinite;
+
+  }
+
+  @keyframes music{
+      100%{
+          transform: rotate(360deg)
+      }
+  }
